@@ -1,0 +1,32 @@
+body {
+	background:		#DFE3E6;
+	font-size:		0.8em;
+	line-height:	1.6em;
+	padding-left: 40px;
+}
+h3 {
+padding-top: 40px;	
+}
+main {
+	width:			960px;
+	margin:			20px auto 0 auto;
+}
+section {
+	float:			left;
+	min-height:		200px;
+	width:			860px;
+	margin:			0 20px;
+	padding-left:	70px;
+}
+#spacer {
+	height: 120px;
+}
+input{
+    background:#fff;
+}
+.grayBackground{
+    background-color:#ccc;
+}
+.redBackground{
+    background-color:red;
+}
