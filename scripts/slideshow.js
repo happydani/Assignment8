@@ -13,14 +13,11 @@ $('document').ready(function () {
 		 currSlide = '';
 
 	$(prevBtn).addClass('show');
-	
-
-//	$('div#btnContainer button').on('click', function(evt) {
-//		console.log(evt.target.id);
-//		currBtn = '#' + evt.target.id;	
-		
-	//	prevBtn = currBtn;	// assign current to prev button
-//	});
+	$('div#slideContainer img').each(function(){
+			window.console.dir(this);
+			$(this).css({'display':'none'});
+		});
+	$('#slide_1').css({'display':'block'});
 	
 	$('div#btnContainer button').on('click', function(evt) {
 		var num = 0;
@@ -29,18 +26,16 @@ $('document').ready(function () {
 			num = (currBtn.indexOf('_') + 1);
 		}
 		currSlide = '#slide_' + currBtn.slice(num);
-window.console.dir(currSlide);
-window.console.dir(prevSlide);
+//		window.console.dir(currSlide);
+//		dir(currSlide);
+//		window.console.dir(prevSlide);
 		$('div#btnContainer button').each(function(){
-window.console.dir(this);
+			window.console.dir(this);
 			$(this).addClass('hide');
 		});
-		$('div#slideContainer img').each(function(){
-window.console.dir(this);
-			$(this).addClass('hide');
-		});
-		$(prevBtn).removeClass('show'); // may not be needed?
-		$(prevBtn).addClass('hide'); // may not be needed?
+		
+		$(prevBtn).removeClass('show'); 
+		$(prevBtn).addClass('hide'); 
 		$(currBtn).removeClass('hide');
 		$(currBtn).addClass('show');
 		$(prevSlide).slideUp(500, 'swing');
@@ -48,18 +43,8 @@ window.console.dir(this);
 		prevBtn = currBtn;
 		prevSlide = currSlide;
 	});
-
-	
-
-	function updateShowHideStatus() {
-		
-	}
-	
-	
-	function showCurrHidePrev() {
-		
-	}
-//	getCurrPrevButtonIds();
-	updateShowHideStatus();
-	showCurrHidePrev();
 }); //End Document Ready
+
+function dir(arg) {
+	window.console.dir(arg);
+}

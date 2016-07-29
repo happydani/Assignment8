@@ -16,11 +16,11 @@ ul.tabNav li {
 }
 
 ul.tabNav li a {
-	padding:10px 60px;
+	padding:10px 30px;
 	color:#036;
 	background-color:#aacccc;
 	text-decoration:none;
-	border-top-left-radius: 40px;
+	border-top-left-radius: 50px;
 	border-top-right-radius: 10px;
 }
 ul.tabNav li a:hover {
