@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Slideshow Using JQuery</title>
+
+	<link href="../styles/normalize.css" type="text/css" rel="stylesheet">
+	<link href="../styles/slideshow.css" type="text/css" rel="stylesheet">
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<style type="text/css">
+		#slideContainer {
+			width: 500px;
+			height: 375px;
+			margin: 20px auto;
+			background-color: #eeeeee;
+			display: inline-block;
+			position: relative;
+			top: 0;
+			left: 0;
+		}
+		#btnContainer {
+			width: 500px;
+			position: absolute; padding-left: 150px; top: 320px;
+		}
+		.show {
+			color: green;
+			background-color: lightgoldenrodyellow;
+		}
+		.hide {
+			color: black;
+			background-color: none;
+		}
+		img {
+			position: absolute;
+			display: inline-block;
+			top: 0;
+			left: 0;
+		}
+		button {
+			border-radius: 15px;
+		}
+	</style>
+	<script src="../styles/jquery-3.1.0.min.js" type="text/javascript"></script>
+	<script src="../styles/slideshow.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<div id="slideContainer">
+  		<img id="slide_7" src="images/slide_7.jpg" alt = "images at LAX airport" />
+  		<img id="slide_6" src="images/slide_6.jpg" alt = "images at LAX airport" />
+  		<img id="slide_5" src="images/slide_5.jpg" alt = "images at LAX airport" />
+  		<img id="slide_4" src="images/slide_4.jpg" alt = "images at LAX airport" />
+  		<img id="slide_3" src="images/slide_3.jpg" alt = "images at LAX airport" />
+  		<img id="slide_2" src="images/slide_2.jpg" alt = "images at LAX airport" />
+		<img id="slide_1" src="images/slide_1.jpg" alt = "images at LAX airport" />
+		
+		<div id='btnContainer'>
+			<button id="btn_1">1</button>
+			<button id="btn_2">2</button>
+			<button id="btn_3">3</button>
+			<button id="btn_4">4</button>
+			<button id="btn_5">5</button>
+			<button id="btn_6">6</button>
+			<button id="btn_7">7</button>
+		</div>
+	</div>
+	
+</body>
+
+</html>
